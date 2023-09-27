@@ -1,10 +1,11 @@
 package AT1;
 import java.sql.SQLOutput;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class AT1 {
     public static void main(String[] args) {
-        num8();
+        num6();
     }
 
     public static void num1() {
@@ -77,8 +78,9 @@ public class AT1 {
         int nb;
 
         do {
-            System.out.print("Entrez un nombre positif: ");
+            System.out.print("Entrez un entier positif: ");
             nb = scan.nextInt();
+
             if (nb > 0) {
                 System.out.println("Sa racine carrée est : " + Math.sqrt(nb) + "\n");
             } else if (nb == 0) {
