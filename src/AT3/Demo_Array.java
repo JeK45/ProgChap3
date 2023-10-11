@@ -96,4 +96,10 @@ public class Demo_Array {
 
         System.out.println(Arrays.toString(tableau)); //le tableau en lui meme
     }
+
+    public static void demo10() {
+        int[] tableau;
+
+        tableau = new int[9];
+    }
 }

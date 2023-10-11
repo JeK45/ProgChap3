@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class AT3 {
     public static void main(String[] args) {
-        algo2();
+        algo4();
     }
 
     public static void num1() {
@@ -182,6 +182,37 @@ public class AT3 {
     }
 
     public static void algo3() {
-        Scanner
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print(" Entrez la taille du tableau : ");
+        int[] tableau = new int[scan.nextInt()];
+
+        for (int i = 0; i <= tableau.length - 1; i++) {
+            tableau[i] = i + 5;
+        }
+        System.out.print(Arrays.toString(tableau));
+        scan.close();
+    }
+
+    public static void algo4() {
+        Scanner scan = new Scanner(System.in);
+
+        int pos = 0;
+
+        System.out.print("Entrez la taille du tableau : ");
+        int[] tableau = new int[scan.nextInt()];
+
+        for (int i = tableau.length; i > 0; i--) {
+            tableau[pos] = i;
+            pos++;
+           // System.out.println(i);
+        }
+
+        System.out.print(Arrays.toString(tableau));
+        scan.close();
+    }
+
+    public static void algo5() {
+
     }
 }
